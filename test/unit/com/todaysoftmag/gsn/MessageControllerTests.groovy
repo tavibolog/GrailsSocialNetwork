@@ -10,8 +10,17 @@ import org.junit.*
  */
 @TestFor(MessageController)
 class MessageControllerTests {
-
-    void testSomething() {
-       fail "Implement me"
+	
+	def messageController
+	
+	@Before
+	public void setUp() {
+		messageController = new MessageController()
+	}
+		
+    void testRedirectOnIndex() {
+       messageController.index()
+	   
+	   assertTrue response.redirectedUrl == "/message/list"
     }
 }
