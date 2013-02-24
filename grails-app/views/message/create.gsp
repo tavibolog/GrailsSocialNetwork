@@ -21,7 +21,7 @@
 		<g:form action="save">
 			<fieldset class="form">
 				<p>
-					<label for="username">Message</label>
+					<label for="message"><g:message code="message.name"/></label>
 					<g:textField name="message" value="${message?.message}"
 						class="${hasErrors(bean:message,field:'message','errors')}" />					
 				</p>

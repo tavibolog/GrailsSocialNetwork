@@ -1,7 +1,7 @@
 package com.todaysoftmag.gsn
 
 class User {
-	String id = UUID.randomUUID().toString()
+	long id
 	String firstName
 	String lastName
 	String userName

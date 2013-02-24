@@ -15,6 +15,6 @@ class UserController {
 				redirect(controller: "message", action: "list")
 			}
 		}
-		render(view: "login", model: [message: "Wrong username or password!"])		
+		render(view: "login", model: [message: message(code:"error.wrong", args:[message(code: "error.usernameorpassword")])])		
 	}
 }

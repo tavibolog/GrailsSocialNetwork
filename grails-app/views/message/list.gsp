@@ -5,8 +5,7 @@
 <title>List Messages</title>
 </head>
 <body>
-	<div class="nav" role="navigation">
-	    <g:if test="${session?.user}"><div id="login">Hi ${session.user}</div></g:if>
+	<div class="nav" role="navigation">	    	    
 		<ul>
 			<li><g:link class="create" action="create">New Message</g:link></li>
 		</ul>
